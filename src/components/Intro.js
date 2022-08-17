@@ -1,7 +1,6 @@
 import React from 'react'
 
 function Intro(props) {
-    console.log(props.data.baseImg.src)
     return (
         <section className="intro" id="home">
             <div className="container intro-container">

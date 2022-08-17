@@ -109,6 +109,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 500;
 }
 
 .logo {
@@ -381,10 +382,25 @@ a {
     color: white;
 }
 
-.project-img {
+.project-card-img {
     width: 250px;
     height: 250px;
     object-fit: cover;
+}
+
+/* project page */
+
+.project-container {
+    text-align: left;
+}
+
+.project-p {
+    max-width: 800px;
+    margin-left: 2rem;
+}
+
+.project-img {
+    margin: 2em auto;
 }
 
 /* footer */

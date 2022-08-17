@@ -1,12 +1,15 @@
 import React from 'react'
 
 function Project(props) {
+    const descriptionJsx = props.data.description.map((line, index) => <p key={index} className="project-p">{line}</p>)
     return (
-        <section className="project-body container">
-            <p>{props.data.description}</p>
-            <img src={props.data.extraImg.src} alt={props.data.extraImg.alt}/>
-            <p>{}</p>
-            {props.data.link && <a href={props.data.link}>View this project on GitHub</a>}
+        <section className="project">
+            <div className="container project-container">
+                {descriptionJsx[0]}
+                <img src={props.data.extraImg.src} alt={props.data.extraImg.alt} className="project-img"/>
+                {descriptionJsx.slice(1)}
+                {props.data.link && <a href={props.data.link}>View this project on GitHub</a>}
+            </div>
         </section>
     )
 }

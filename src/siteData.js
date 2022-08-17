@@ -21,12 +21,52 @@ export const projects = [
             alt: ""
         },
         extraImg: {
-            src: "",
+            src: "./images/Lifelog-map.PNG",
             alt: ""
         },
         description: [
-            `hi`,
-            `I made this`
+            `
+                For my master's thesis, I created and scientifically evaluated a web application, 
+                the Lifelog Browser, which was built to make
+                lifelog data accessible. Lifelog data is a combination of different data types
+                that someone collects with sensors that they carry around with them. Specifically,
+                the database of lifelog data that I used for this application contained photos,
+                together with metadata like date and location. The database contained almost 
+                300,000 photos, which were displayed to the user on a map. They could filter the 
+                photos by date, time, location or tag. The video below shows a short demonstration
+                of the functionalities of the Lifelog Browser. Note that the content of the photos
+                is blurred, since their content is privacy sensitive.
+            `,
+            `
+                As you can see in the video, photos are placed on the map and the user may click
+                on them to inspect them in more detail. The photos on the map are displayed 
+                interactively when the user scrolls the map or adds a filter. A number of different
+                map visualizations and temporal filter options are available, as the goal of the
+                research was to determine which map visualization and temporal filter type is
+                most effective for lifelog data access. 
+            `,
+            `
+                I built the Lifelog Browser from scratch by myself, using Django to set up the
+                backend, which managed the database with the photos and their metadata. The 
+                front-end was built using mainly vanilla JavaScript, as I felt most comfortable 
+                with that at the time. I pulled in a number of libraries for functionalities 
+                that were too complex to create by myself. To implement the map, I used Leaflet
+                and for the different map visualizations, I used the plug-ins Leaflet.heat and 
+                Markercluster, slightly modifying their styling and functionalities to suit my
+                needs. Finally, for two of the temporal filter types, I used the Jspreadsheet CE
+                library and added functionalities on top in order to be able to use it as an
+                input method.
+            `,
+            `
+                It was a very valuable experience for me to build such a large project from scratch.
+                Building the back-end was the most challenging aspect to me, as I had little 
+                experience in this before starting this project. However, it has taught me 
+                valuable lessons about working with API's and optimization. It was also insightful
+                to me to work with external JavaScript libraries and building my own functionalities
+                on top of them. Even though a number of bugs and performance problems persist in
+                this project that I could not solve due to lack of time, I am proud of what I 
+                achieved in this project.
+            `
         ]
     },
     {

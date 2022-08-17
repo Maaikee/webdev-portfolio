@@ -8,7 +8,7 @@ function Projects() {
             <Link to={project.url} className="project-link" key={project.key} >
                 <div className="project-card">
                     <img
-                        className="project-img"
+                        className="project-card-img"
                         src={project.baseImg.src}
                         alt={project.baseImg.alt}
                     />
