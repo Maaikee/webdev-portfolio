@@ -4,12 +4,7 @@ import Skills from './components/Skills.js'
 import About from './components/About.js'
 import Projects from './components/Projects.js'
 
-const introProps = {
-    headerSpan: "Hi, I am",
-    headerBold: "Maaike",
-    subtitle: "front-end dev",
-    img: ""
-}
+import {introProps} from "./siteData";
 
 function Home() {
     return (

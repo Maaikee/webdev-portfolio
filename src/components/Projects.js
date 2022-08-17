@@ -5,14 +5,14 @@ import {projects} from "../siteData"
 function Projects() {
     const projectCards = projects.map(project => {
         return (
-            <Link to={project.info.url} className="project-link" key={project.key} >
+            <Link to={project.url} className="project-link" key={project.key} >
                 <div className="project-card">
                     <img
                         className="project-img"
-                        src={project.info.img}
-                        alt=""
+                        src={project.baseImg.src}
+                        alt={project.baseImg.alt}
                     />
-                    <h3 className="project-header">{project.info.title}</h3>
+                    <h3 className="project-header">{project.title}</h3>
                 </div>
             </Link>
         )

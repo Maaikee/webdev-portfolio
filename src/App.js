@@ -8,9 +8,10 @@ import NavSmall from './components/NavSmall'
 import NavBig from './components/NavBig'
 import Footer from './components/Footer'
 
-import {lifelogProps, snakeProps, notesProps} from './siteData'
+import {projects} from './siteData'
 
 function App() {
+    // ensure menu change on resize
     const [width, setWidth] = useState(window.innerWidth)
 
     function handleResize() {
@@ -18,6 +19,18 @@ function App() {
     }
 
     window.addEventListener("resize", handleResize)
+
+    // create project routes
+    const routesJsx = projects.map((project, index) => {
+        return (
+            <Route
+                path={project.url}
+                element={ <ProjectPage data={project}/> }
+                key={index}
+            />
+        )
+    })
+
 
   return (
       <div className="App">
@@ -27,9 +40,7 @@ function App() {
           </header>
           <Routes>
             <Route path="/" element={ <Home/> }/>
-            <Route path="lifelogbrowser" element={ <ProjectPage data={lifelogProps}/> } />
-            <Route path="snake" element={ <ProjectPage data={snakeProps} /> } />
-            <Route path="notes" element={ <ProjectPage data={notesProps} /> } />
+            {routesJsx}
           </Routes>
           <Footer>
               <Footer />

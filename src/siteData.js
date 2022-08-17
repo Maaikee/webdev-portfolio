@@ -1,127 +1,78 @@
+// import React from 'react'
+
+export const introProps = {
+    title: "Maaike",
+    titleSpan: "Hi, I am",
+    subtitle: "Front-end dev",
+    baseImg: {
+        src: "/",
+        alt: ""
+    }
+}
+
 export const projects = [
     {
         key: 1,
-        info: {
-            url: "lifelogbrowser",
-            img: "./images/Lifelog-map.PNG",
-            title: "Lifelog Browser"
+        url: "lifelogbrowser",
+        title: "Lifelog Browser",
+        subtitle: "Thesis project",
+        baseImg: {
+            src: "./images/Lifelog-map.PNG",
+            alt: ""
         },
-        intro: {
-            headerSpan: "",
-            headerBold: "Lifelog Browser",
-            subtitle: "Thesis project",
-            img: "./images/Lifelog-map.PNG"
+        extraImg: {
+            src: "",
+            alt: ""
         },
-        description: {
-            intro: "Hi",
-            img: "",
-            body: "I made dis"
-        }
+        description: [
+            `hi`,
+            `I made this`
+        ]
     },
     {
         key: 2,
-        info: {
-            url: "snake",
-            img: "./images/Snake-field.PNG",
-            title: "Snake"
+        url: "snake",
+        title: "Snake",
+        subtitle: "Classic game",
+        baseImg: {
+            src: "./images/Snake-field.PNG",
+            alt: ""
         },
-        intro: {
-            headerSpan: "",
-            headerBold: "Snake",
-            subtitle: "Classic game",
-            img: "./images/Snake-field.PNG"
+        extraImg: {
+            src: "",
+            alt: ""
         },
-        description: {
-            intro: "Hi",
-            img: "",
-            body: "I made dis too"
-        }
+        description: [
+            `hi`,
+            `I made this too`
+        ]
     },
     {
         key: 3,
-        info: {
-            url: "notes",
-            img: "./images/Snake-field.PNG",
-            title: "Notes"
+        url: "notes",
+        title: "Notes",
+        subtitle: "Simple app",
+        baseImg: {
+            src: "./images/",
+            alt: ""
         },
-        intro: {
-            headerSpan: "",
-            headerBold: "Snake",
-            subtitle: "Classic game",
-            img: "./images/Snake-field.PNG"
+        extraImg: {
+            src: "./images/",
+            alt: ""
         },
-        description: {
-            intro: "Hi",
-            img: "",
-            body: "I made dis too"
-        }
+        description: [
+            `hi`,
+            `I made this three`
+        ]
     }
 ]
-
-
-export const lifelogProps = {
-    info: {
-        url: "lifelogbrowser",
-        img: "./images/Lifelog-map.PNG",
-        title: "Lifelog Browser"
-    },
-    intro: {
-        headerSpan: "",
-        headerBold: "Lifelog Browser",
-        subtitle: "Thesis project",
-        img: "./images/Lifelog-map.PNG"
-    },
-    description: {
-        intro: "Hi",
-        img: "",
-        body: "I made dis"
-    }
-}
-
-export const snakeProps = {
-    info: {
-        url: "snake",
-        img: "./images/Snake-field.PNG",
-        title: "Snake"
-    },
-    intro: {
-        headerSpan: "",
-        headerBold: "Snake",
-        subtitle: "Classic game",
-        img: "./images/Snake-field.PNG"
-    },
-    description: {
-        intro: "Hi",
-        img: "",
-        body: "I made dis too"
-    }
-}
-
-export const notesProps = {
-    info: {
-        url: "notes",
-        img: "./images/",
-        title: "Notes"
-    },
-    intro: {
-        headerSpan: "",
-        headerBold: "Notes",
-        subtitle: "Basic notes app",
-        img: ""
-    },
-    description: {
-        intro: "Hi",
-        img: "",
-        body: "I made dis three"
-    }
-}
 
 export const skills = [
     {
         key: 1,
         title: "JavaScript",
         content: `
-            After building my coding knowledge in Python, 
+            After building a basis of coding knowledge in Python, 
             I started to learn JavaScript, to which I adapted quickly. 
             I have practiced my JavaScript skills in many different 
             projects, where I used both vanilla JavaScript and a number
@@ -162,18 +113,24 @@ export const about = [
         scripting and decided to pursue this interest in a master in computer science,
         with a focus on Game and Media Technology. However, at this point I hardly had
         any coding skills and needed to teach myself in order to keep up with my peers,
-        which I managed to do successfully. During my master, I realized that
+        which I did successfully. During my master, I realized that
         front-end development was the perfect combination of both my artistic and 
         technical interests. Therefore, I decided to pursue a career as a front-end 
         developer.
     `,
     `
-        To achieve this, I have learned the basics of front-end development through 
-        Scrimba's Front-End Career path, which I have followed simultaneously with
-        my master's degree. During this career path, I have completed a large number
-        of projects, a selection of which can be found on this site. 
+       I have obtained my front-end development skills through self-study combined with
+       Scrimba's Front-End Career path, 
+       which I have followed simultaneously with my master's degree. During this career path, 
+       I have completed a large number of projects, a selection of which can be found on this site. 
     `,
     `
-        Does this break stuff?
+        My skills include more than just my main three skills I have described above. During
+        my master's degree, I have also obtained knowledge of various other topics
+        such as interaction, machine learning, algorithmics and multimedia retrieval. 
+        This, in combination with my background in art, makes me flexible and knowledgeable 
+        in a wide variety of areas. My quick transition from game art to computer science shows
+        that I am a fast learner and that I enjoy a challenge. Both during my bachelor's and 
+        master's degrees, I have worked predominantly in teams, which I enjoy a lot.          
     `
 ]

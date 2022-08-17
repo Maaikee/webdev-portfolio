@@ -319,7 +319,7 @@ header {
 
 @media (min-width: 750px) {
     .about-container {
-        grid-template: 80px 80px 1fr 1fr / 1fr 40%;
+        grid-template: 80px 80px auto auto auto / 1fr 40%;
         text-align: left;
     }
 

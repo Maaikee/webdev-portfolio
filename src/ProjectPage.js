@@ -5,8 +5,8 @@ import Project from "./components/Project"
 function ProjectPage(props) {
     return (
         <>
-            <Intro data={props.data.intro}/>
-            <Project data={props.data.project}/>
+            <Intro data={props.data}/>
+            <Project data={props.data}/>
         </>
     )
 }
