@@ -11,15 +11,11 @@ function NavBig() {
                     </li>
                     <li
                         className="nav-item">
-                        <a href="/#skills">Skills</a>
+                        <Link to="about">About me</Link>
                     </li>
                     <li
                         className="nav-item">
-                        <a href="/#about">About me</a>
-                    </li>
-                    <li
-                        className="nav-item">
-                        <a href="/#projects">Projects</a>
+                        <Link to="projects" >Projects</Link>
                     </li>
                 </ul>
             </nav>

@@ -1,5 +1,6 @@
 import React from 'react'
-import {skills} from "../siteData";
+import {skills} from "../siteData"
+import {Link} from "react-router-dom"
 
 function Skills() {
     const skillsJsx = skills.map(skill => {
@@ -16,7 +17,7 @@ function Skills() {
             <div className="container skills-container">
                 <h2 className="skills-header">My skills</h2>
                 {skillsJsx}
-                <a href="#projects" className="btn see-projects-btn">see my projects</a>
+                <Link to="projects" className="btn see-projects-btn">see my projects</Link>
             </div>
         </section>
     )

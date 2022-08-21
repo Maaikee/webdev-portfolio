@@ -1,9 +1,9 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import {projects} from "../siteData"
+import {projectData} from "../siteData"
 
-function Projects() {
-    const projectCards = projects.map(project => {
+function ProjectsOverview() {
+    const projectCards = projectData.map(project => {
         return (
             <Link to={project.url} className="project-link" key={project.key} >
                 <div className="project-card">
@@ -30,4 +30,4 @@ function Projects() {
     )
 }
 
-export default Projects
+export default ProjectsOverview

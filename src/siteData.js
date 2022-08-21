@@ -10,7 +10,7 @@ export const introProps = {
     }
 }
 
-export const projects = [
+export const projectData = [
     {
         key: 1,
         url: "lifelogbrowser",

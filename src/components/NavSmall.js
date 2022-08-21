@@ -28,17 +28,12 @@ function NavSmall() {
                     <li
                         className="nav-item"
                         onClick={handleMenuToggle}>
-                        <a href="/#skills">Skills</a>
+                        <Link to="about">About me</Link>
                     </li>
                     <li
                         className="nav-item"
                         onClick={handleMenuToggle}>
-                        <a href="/#about">About me</a>
-                    </li>
-                    <li
-                        className="nav-item"
-                        onClick={handleMenuToggle}>
-                        <a href="/#projects">Projects</a>
+                        <Link to="projects">Projects</Link>
                     </li>
                 </ul>
             </nav>

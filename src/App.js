@@ -2,13 +2,18 @@ import './App.css'
 import React, {useState} from 'react'
 import {Routes, Route} from "react-router-dom"
 
+// import components to render
 import Home from "./Home";
-import ProjectPage from "./ProjectPage";
 import NavSmall from './components/NavSmall'
 import NavBig from './components/NavBig'
 import Footer from './components/Footer'
 
-import {projects} from './siteData'
+// import components for different pages
+import {projectData} from './siteData'
+import ProjectDetails from "./components/ProjectDetails";
+import ProjectsPage from "./ProjectsPage";
+import AboutPage from "./AboutPage";
+
 
 function App() {
     // ensure menu change on resize
@@ -21,11 +26,11 @@ function App() {
     window.addEventListener("resize", handleResize)
 
     // create project routes
-    const routesJsx = projects.map((project, index) => {
+    const routesJsx = projectData.map((project, index) => {
         return (
             <Route
                 path={project.url}
-                element={ <ProjectPage data={project}/> }
+                element={ <ProjectDetails data={project}/> }
                 key={index}
             />
         )
@@ -40,6 +45,8 @@ function App() {
           </header>
           <Routes>
             <Route path="/" element={ <Home/> }/>
+            <Route path="about" element={ <AboutPage /> }/>
+            <Route path="projects" element={ <ProjectsPage /> }/>
             {routesJsx}
           </Routes>
           <Footer>

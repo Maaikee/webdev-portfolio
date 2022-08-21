@@ -1,7 +1,8 @@
 import React from 'react'
-import {about} from "../siteData";
+import {about} from "../siteData"
+import {Link} from "react-router-dom"
 
-function About() {
+function AboutOverview() {
     const aboutJsx = about.map((par, index) => <p className="about-p" key={index}>{par}</p>)
 
     return (
@@ -11,9 +12,10 @@ function About() {
                 <p className="subtitle about-subtitle">Front-end developer based in Utrecht</p>
                 <img src="img/dev-jane-02.jpg" className="about-img" alt=""/>
                 {aboutJsx}
+                <Link to="about" className="btn">read more about me</Link>
             </div>
         </section>
     )
 }
 
-export default About
+export default AboutOverview

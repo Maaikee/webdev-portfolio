@@ -1,8 +1,8 @@
 import React from "react";
 import Intro from './components/Intro.js'
 import Skills from './components/Skills.js'
-import About from './components/About.js'
-import Projects from './components/Projects.js'
+import AboutOverview from './components/AboutOverview.js'
+import ProjectsOverview from './components/ProjectsOverview.js'
 
 import {introProps} from "./siteData";
 
@@ -11,8 +11,8 @@ function Home() {
         <>
             <Intro data={introProps} />
             <Skills/>
-            <About/>
-            <Projects/>
+            <AboutOverview/>
+            <ProjectsOverview/>
         </>
     )
 }
