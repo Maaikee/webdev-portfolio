@@ -12,7 +12,7 @@ function AboutOverview() {
                 <p className="subtitle about-subtitle">Front-end developer based in Utrecht</p>
                 <img src="img/dev-jane-02.jpg" className="about-img" alt=""/>
                 {aboutJsx}
-                <Link to="about" className="btn">read more about me</Link>
+                <Link to="about" className="btn" id="more-about-btn">read more about me</Link>
             </div>
         </section>
     )

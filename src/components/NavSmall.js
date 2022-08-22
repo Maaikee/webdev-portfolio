@@ -13,10 +13,9 @@ function NavSmall() {
             <button
                 className="nav-toggle"
                 aria-label="toggle navigation"
-                id="hamburger-btn"
                 onClick={handleMenuToggle}
             >
-                <span className="hamburger"></span>
+                <span className={`hamburger ${menuOpen ? "hamburger-open" : ""}`}></span>
             </button>
             <nav className={`nav-small ${menuOpen ? "nav-open" : ""}`} id="nav">
                 <ul className="nav-list">

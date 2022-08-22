@@ -6,8 +6,16 @@ function Footer() {
             <a href="mailto:maaike.konijnendijk@hotmail.com"
                className="mail footer-link">maaike.konijnendijk@hotmail.com</a>
             <ul className="socials-list">
-                <li className="social footer-link"><i className="fa-brands fa-linkedin"></i></li>
-                <li className="social footer-link"><i className="fa-brands fa-github"></i></li>
+                <li className="social footer-link">
+                    <a href="https://www.linkedin.com/in/mkonijnendijk/">
+                        <img src="./images/linkedin-brands.svg" alt="LinkedIn Icon"/>
+                    </a>
+                </li>
+                <li className="social footer-link">
+                    <a href="https://github.com/Maaikee">
+                        <img src="./images/square-github-brands.svg" alt="GitHub Icon"/>
+                    </a>
+                </li>
             </ul>
         </div>
     )
