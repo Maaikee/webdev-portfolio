@@ -1,10 +1,27 @@
 import React from "react"
-// import Intro from "./components/Intro"
+import Skills from "./components/Skills"
+import Intro from "./components/Intro"
+import {introProps} from "./siteData"
+import {about} from "./siteData"
 
 function ProjectsPage(props) {
+    React.useEffect(() => {
+      window.scrollTo(0, 0)
+    }, [])
+
+    const aboutJsx = about.description.map((par, index) => <p className="text-p" key={index}>{par}</p>)
+
     return (
         <>
-            <h1>This is the extended about me page</h1>
+            <Intro
+                data={introProps.about}
+            />
+            <section className="about">
+                <div className="container text-container">
+                    {aboutJsx}
+                </div>
+            </section>
+            <Skills />
         </>
     )
 }

@@ -1,14 +1,36 @@
 // import React from 'react'
 
 export const introProps = {
-    title: "Maaike",
-    titleSpan: "Hi, I am",
-    subtitle: "Front-end dev",
-    baseImg: {
-        src: "/",
-        alt: ""
+    home: {
+        title: "Maaike",
+        titleSpan: "Hi, I am",
+        subtitle: "Front-end dev",
+        baseImg: {
+            src: "/",
+            alt: ""
+        }
+    },
+    about: {
+       title: "About me",
+        subtitle: "Front-end dev",
+        baseImg: {
+            src: "/",
+            alt: ""
+        }
+    },
+    projects: {
+        title: "Projects",
+        subtitle: "Some of my work",
+        baseImg: {
+            src: "/",
+            alt: ""
+        }
     }
 }
+
+export const projectIntro = ` 
+    Intro into
+`
 
 export const projectData = [
     {
@@ -145,32 +167,36 @@ export const skills = [
     },
 ]
 
-export const about = [
-    `
-        Originally a 3D game artist, I transitioned into the field of front-end
-        development because I was looking for a bigger challenge. While finishing 
-        my bachelor's degree in 3D visual art, I found an interest in visual 
-        scripting and decided to pursue this interest in a master in computer science,
-        with a focus on Game and Media Technology. However, at this point I hardly had
-        any coding skills and needed to teach myself in order to keep up with my peers,
-        which I did successfully. During my master, I realized that
-        front-end development was the perfect combination of both my artistic and 
-        technical interests. Therefore, I decided to pursue a career as a front-end 
-        developer.
-    `,
-    `
-       I have obtained my front-end development skills through self-study combined with
-       Scrimba's Front-End Career path, 
-       which I have followed simultaneously with my master's degree. During this career path, 
-       I have completed a large number of projects, a selection of which can be found on this site. 
-    `,
-    `
-        My skills include more than just my main three skills I have described above. During
-        my master's degree, I have also obtained knowledge of various other topics
-        such as interaction, machine learning, algorithmics and multimedia retrieval. 
-        This, in combination with my background in art, makes me flexible and knowledgeable 
-        in a wide variety of areas. My quick transition from game art to computer science shows
-        that I am a fast learner and that I enjoy a challenge. Both during my bachelor's and 
-        master's degrees, I have worked predominantly in teams, which I enjoy a lot.          
-    `
-]
+export const about = {
+        summary: `Summary summary.`,
+        description: [
+            `
+            Originally a 3D game artist, I transitioned into the field of front-end
+            development because I was looking for a bigger challenge. While finishing 
+            my bachelor's degree in 3D visual art, I found an interest in visual 
+            scripting and decided to pursue this interest in a master in computer science,
+            with a focus on Game and Media Technology. However, at this point I hardly had
+            any coding skills and needed to teach myself in order to keep up with my peers,
+            which I did successfully. During my master, I realized that
+            front-end development was the perfect combination of both my artistic and 
+            technical interests. Therefore, I decided to pursue a career as a front-end 
+            developer.
+        `,
+            `
+           I have obtained my front-end development skills through self-study combined with
+           Scrimba's Front-End Career path, 
+           which I have followed simultaneously with my master's degree. During this career path, 
+           I have completed a large number of projects, a selection of which can be found on this site. 
+        `,
+        `
+    
+            My skills include more than just my main three skills I have described above. During
+            my master's degree, I have also obtained knowledge of various other topics
+            such as interaction, machine learning, algorithmics and multimedia retrieval. 
+            This, in combination with my background in art, makes me flexible and knowledgeable 
+            in a wide variety of areas. My quick transition from game art to computer science shows
+            that I am a fast learner and that I enjoy a challenge. Both during my bachelor's and 
+            master's degrees, I have worked predominantly in teams, which I enjoy a lot.          
+        
+    `]
+}

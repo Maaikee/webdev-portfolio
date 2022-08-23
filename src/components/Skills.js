@@ -17,7 +17,7 @@ function Skills() {
             <div className="container skills-container">
                 <h2 className="skills-header">My skills</h2>
                 {skillsJsx}
-                <Link to="projects" className="btn see-projects-btn">see my projects</Link>
+                <Link to="/projects" className="btn see-projects-btn">see my projects</Link>
             </div>
         </section>
     )

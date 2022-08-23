@@ -58,8 +58,20 @@ img {
 .container {
     width: 90%;
     max-width: 900px;
-    margin: 3em auto;
+    margin: 0 auto;
     text-align: center;
+    padding: 3em 0.5em;
+}
+
+.text-container {
+    display: grid;
+    text-align: center;
+    align-items: center;
+}
+
+.text-p {
+    justify-self: center;
+    max-width: 500px;
 }
 
 .btn {
@@ -76,6 +88,19 @@ img {
 .btn:focus {
     scale: 1.1;
     background: var(--clr-accent-highlight);
+}
+
+@media (min-width: 750px) {
+    .text-container {
+        text-align: left;
+    }
+
+    .text-p {
+        padding-left: 2rem;
+        justify-self: left;
+        margin-bottom: 0;
+        max-width: 700px;
+    }
 }
 
 /* Typography */
@@ -258,6 +283,8 @@ header {
     display: grid;
     align-content: center;
     text-align: center;
+    margin-top: 2em;
+    padding: 0;
 }
 
 .intro-img {
@@ -297,7 +324,6 @@ header {
 }
 
 .skills-container {
-    padding: 3em 0.5em;
     display: grid;
     align-items: center;
     justify-items: center;
@@ -340,24 +366,19 @@ header {
 
 /* about me */
 
-.about-container {
+.about-overview-container {
     display: grid;
     text-align: center;
     align-items: center;
 }
 
-.about-subtitle {
+.about-overview-subtitle {
     font-size: 1.3rem;
 }
 
-.about-img {
+.about-overview-img {
     width: 60%;
     margin: 2em auto;
-}
-
-.about-p {
-    justify-self: center;
-    max-width: 500px;
 }
 
 #more-about-btn {
@@ -366,33 +387,31 @@ header {
 }
 
 @media (min-width: 750px) {
-    .about-container {
-        grid-template: 80px 80px auto auto auto / 1fr 40%;
+    .about-container,
+    .about-overview-container {
         text-align: left;
     }
 
-    .about-subtitle {
+    .about-overview-container {
+        grid-template: 80px 80px auto auto auto / 1fr 40%;
+    }
+
+    .about-overview-subtitle {
         grid-column: 1 / -1;
         grid-row: 2 / 3;
         padding-right: 20rem;
     }
 
-    .about-img {
+    .about-overview-img {
         width: 80%;
         grid-column: -2 / -1;
         grid-row: 1 / -1;
         align-self: start;
     }
 
-    .about-header,
-    .about-subtitle,
-    .about-p {
+    .about-overview-header,
+    .about-overview-subtitle {
         padding-left: 2rem;
-    }
-
-    .about-p {
-        margin-bottom: 0;
-        max-width: 700px;
     }
 
     #more-about-btn {
@@ -414,7 +433,11 @@ header {
 
 .projects-header {
     color: var(--clr-accent);
-    margin-bottom: 1em;
+}
+
+.projects-note {
+    margin: 1em auto;
+    max-width: 500px;
 }
 
 .portfolio {

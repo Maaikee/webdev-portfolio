@@ -2,8 +2,12 @@ import React from 'react'
 import Intro from "./Intro";
 
 function ProjectDetails(props) {
-    console.log(props)
+    React.useEffect(() => {
+      window.scrollTo(0, 0)
+    }, [])
+
     const descriptionJsx = props.data.description.map((line, index) => <p key={index} className="project-p">{line}</p>)
+
     return (
         <>
             <Intro data={props.data}/>
