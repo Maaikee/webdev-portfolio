@@ -12,7 +12,7 @@ export const introProps = {
     },
     about: {
        title: "About me",
-        subtitle: "Front-end dev",
+        subtitle: "Maaike Konijnendijk",
         baseImg: {
             src: "/",
             alt: ""
@@ -29,7 +29,12 @@ export const introProps = {
 }
 
 export const projectIntro = ` 
-    Intro into
+    While learning JavaScript, React, HTML and CSS, I have built many 
+    projects, as I always like to immediately use new concepts that I learn.
+    This approach ensures that I fully understand and know how to apply new concepts. 
+    Below you find a selection of the projects I have worked on.  
+    Curious about my code? Some projects contain a link to GitHub or CodePen, where you
+    can take a look.         
 `
 
 export const projectData = [
@@ -56,8 +61,8 @@ export const projectData = [
                 together with metadata like date and location. The database contained almost 
                 300,000 photos, which were displayed to the user on a map. They could filter the 
                 photos by date, time, location or tag. The video below shows a short demonstration
-                of the functionalities of the Lifelog Browser. Note that the content of the photos
-                is blurred, since their content is privacy sensitive.
+                of the functionalities of the Lifelog Browser. Note that the photos
+                are blurred, since their content is privacy sensitive.
             `,
             `
                 As you can see in the video, photos are placed on the map and the user may click
@@ -98,36 +103,56 @@ export const projectData = [
         subtitle: "Classic game",
         baseImg: {
             src: "./images/Snake-field.PNG",
-            alt: ""
+            alt: "My Snake playing field."
         },
         extraImg: {
-            src: "",
-            alt: ""
+            src: "./images/Snake.PNG",
+            alt: "My Snake web app"
         },
         description: [
-            `hi`,
-            `I made this too`
-        ]
+            ` 
+                Since I was always interested in video games, one of the small 
+                projects I enjoyed the most while learning JavaScript was recreating the game Snake.
+                This was one of the projects which was included in my course to learn basic JavaScript.
+                The game has all the functionalities of the normal Snake game, where the snake
+                increases in size and starts to move more quickly after eating an apple.           
+            `,
+            `
+                I expanded upon the basic functionalities of the game that were given by the instructor
+                by adding my own styling. With JavaScript, I wrote a function which randomly 
+                generates colors for the squares of the playing field to make it look like grass.
+                I also wrote a function which changes the styling of the head and tail of the snake
+                to make it appear more rounded instead of just square. These were fun little 
+                additional challenges which I added to ensure I understood all the concepts 
+                completely.
+            `
+        ],
+        link: {
+            url: "https://codepen.io/maaikee/pen/rNdbvRB",
+            type: "CodePen"
+        }
     },
-    {
-        key: 3,
-        url: "notes",
-        title: "Notes",
-        subtitle: "Simple app",
-        baseImg: {
-            src: "./images/",
-            alt: ""
-        },
-        extraImg: {
-            src: "./images/",
-            alt: ""
-        },
-        description: [
-            `hi`,
-            `I made this three`
-        ]
-    }
+    // {
+    //     key: 3,
+    //     url: "notes",
+    //     title: "Notes",
+    //     subtitle: "Simple app",
+    //     baseImg: {
+    //         src: "./images/",
+    //         alt: ""
+    //     },
+    //     extraImg: {
+    //         src: "./images/",
+    //         alt: ""
+    //     },
+    //     description: [
+    //         `hi`,
+    //         `I made this three`
+    //     ]
+    // }
 ]
+
+// user experience / usability
 
 export const skills = [
     {
@@ -138,16 +163,15 @@ export const skills = [
             I started to learn JavaScript, to which I adapted quickly. 
             I have practiced my JavaScript skills in many different 
             projects, where I used both vanilla JavaScript and a number
-            of different libraries. I focus on writing clean and readable code, 
-            creating reusable code as much as possible.
+            of different libraries. I focus on writing clean and readable code.
         `
     },
     {
         key: 2,
         title: "HTML & CSS",
         content: `
-            I focus on creating well-structured HTML pages with sensible CSS styling. 
-            I love to see a plain HTML page come to life through CSS. In CSS, 
+            I create well-structured HTML pages with sensible CSS styling. 
+            I love to see a plain HTML page come to life through CSS. 
             I use classes to my advantage to create reusable and well-structured
             code.  I also always ensure that the web page is responsive, so users
             of any screen type can use it seamlessly.
@@ -162,41 +186,57 @@ export const skills = [
             practicing the basics of React and I've been enjoying the speed and 
             simplicity of building web pages in React. I'm excited to learn more
             about this framework so I can use it to create well-structured and 
-            well-performing web pages.
+            well-performing web apps.
         `
     },
+    {
+        key: 4,
+        title: "Python",
+        content: `
+            Even though not directly applicable to front-end development, I learned 
+            a lot of Python during my master's degree. I use it for a variety of different
+            purposes, from machine learning to multimedia retrieval and scripting. I also have some
+            back-end experience with Python, as for my thesis project I built a web-app
+            with a Django back-end. 
+        `
+    }
 ]
 
 export const about = {
-        summary: `Summary summary.`,
+        summary: `
+            Originally a 3D Game Artist, I moved to the field of front-end development because 
+            it allows me to use both my artistic and technical skills. I enjoy problem solving 
+            and I always need to be learning something new. I understand that a project has 
+            both visual and technical requirements and therefore I focus on creating web 
+            applications which both look good and run smoothly. I always strive to come up with 
+            the best possible solution to a problem.          
+        `,
         description: [
             `
             Originally a 3D game artist, I transitioned into the field of front-end
             development because I was looking for a bigger challenge. While finishing 
             my bachelor's degree in 3D visual art, I found an interest in visual 
-            scripting and decided to pursue this interest in a master in computer science,
+            scripting and decided to pursue this interest through a master in computer science,
             with a focus on Game and Media Technology. However, at this point I hardly had
-            any coding skills and needed to teach myself in order to keep up with my peers,
-            which I did successfully. During my master, I realized that
-            front-end development was the perfect combination of both my artistic and 
-            technical interests. Therefore, I decided to pursue a career as a front-end 
-            developer.
+            any coding skills and needed to adapt quickly in order to keep up with my peers.
+            I started out learning Python and later moved on to learning front-end skills such as
+            JavaScript, HTML, CSS and React.
         `,
             `
-           I have obtained my front-end development skills through self-study combined with
-           Scrimba's Front-End Career path, 
-           which I have followed simultaneously with my master's degree. During this career path, 
-           I have completed a large number of projects, a selection of which can be found on this site. 
+           I obtained these front-end skills through self-study combined with Scrimba's Front-End Career path, 
+           which I have followed simultaneously with my master's degree. With the career path I learned 
+           the basics of front-end development, while my in master's I learned about a variety of different
+           subjects, including performing academic research, human-computer interaction,
+           machine learning, algorithmics and multimedia retrieval. Learning about many 
+           different subjects improved my versatility and I am always ready to take on a challenge. 
+           My degrees also taught me to work in teams, as most courses included teamwork. 
+           I really enjoy the dynamic of teamwork, as I view receiving and giving 
+           feedback as one of the most important ways to improve.
         `,
         `
-    
-            My skills include more than just my main three skills I have described above. During
-            my master's degree, I have also obtained knowledge of various other topics
-            such as interaction, machine learning, algorithmics and multimedia retrieval. 
-            This, in combination with my background in art, makes me flexible and knowledgeable 
-            in a wide variety of areas. My quick transition from game art to computer science shows
-            that I am a fast learner and that I enjoy a challenge. Both during my bachelor's and 
-            master's degrees, I have worked predominantly in teams, which I enjoy a lot.          
-        
-    `]
+            Even though I enjoy coding a lot, it's also very important for me to dedicate time to other activities. 
+            When I'm not coding I enjoy a number of different hobbies, such as climbing, sewing or playing
+            video games.
+        `
+    ]
 }

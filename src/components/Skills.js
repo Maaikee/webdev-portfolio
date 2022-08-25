@@ -16,7 +16,9 @@ function Skills() {
         <section className="skills" id="skills">
             <div className="container skills-container">
                 <h2 className="skills-header">My skills</h2>
-                {skillsJsx}
+                <div className="skills-grid">
+                    {skillsJsx}
+                </div>
                 <Link to="/projects" className="btn see-projects-btn">see my projects</Link>
             </div>
         </section>

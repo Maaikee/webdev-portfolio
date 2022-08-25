@@ -1,6 +1,6 @@
 import './App.css'
 import React, {useState} from 'react'
-import {Routes, Route} from "react-router-dom"
+import {Routes, Route, Link} from "react-router-dom"
 
 // import components to render
 import Home from "./Home";
@@ -40,8 +40,12 @@ function App() {
   return (
       <div className="App">
           <header className="App-header">
-            <div className="logo">--</div>
-              {width < 750 ? <NavSmall/> : <NavBig/>}
+            <Link to="/">
+                <div className="logo">
+                    <img src="./images/code-solid-black.svg" alt="site logo"/>
+                </div>
+            </Link>
+            {width < 750 ? <NavSmall/> : <NavBig/>}
           </header>
           <Routes>
             <Route path="/" element={ <Home/> }/>

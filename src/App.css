@@ -99,7 +99,7 @@ img {
         padding-left: 2rem;
         justify-self: left;
         margin-bottom: 0;
-        max-width: 700px;
+        max-width: 800px;
     }
 }
 
@@ -142,10 +142,17 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 500;
+    box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.31);
 }
 
 .logo {
-    margin: 0 4em 0 1em;
+    margin: 0.5em 4em 0 1em;
+    height: 35px;
+    width: 35px;
+}
+
+.logo img {
+    box-shadow: none;
 }
 
 .nav-small, nav-big {
@@ -292,6 +299,10 @@ header {
     margin: 1.5em auto;
 }
 
+.project-intro-img {
+    display: none;
+}
+
 @media (min-width: 750px) {
     .intro-container {
         text-align: right;
@@ -314,19 +325,24 @@ header {
         grid-row: 1 / 3;
         grid-column: 1 / 2;
     }
+
+    .project-intro-img {
+        display: block;
+    }
 }
 
 /* Skills */
 
+.skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: grid;
+    justify-items: center;
+    grid-gap: 1em;
+}
+
 .skills {
     background: var(--clr-dark);
     color: var(--clr-light);
-}
-
-.skills-container {
-    display: grid;
-    align-items: center;
-    justify-items: center;
 }
 
 .skills-header {
@@ -336,32 +352,6 @@ header {
 .skill {
     margin: 1em 1.5em;
     max-width: 500px;
-}
-
-@media (min-width: 750px) {
-    .skills {
-        /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/services-bg.jpg'); */
-        background-size: cover;
-    }
-}
-
-@media (min-width: 950px) {
-    .skills-container {
-        grid-template: 80px 1fr 80px / repeat(3, 1fr);
-        grid-template-areas:
-            "header header header"
-            ". . ."
-            "button button button";
-        align-items: flex-start;
-    }
-
-    .skills-header {
-        grid-area: header;
-    }
-
-    .see-projects-btn {
-        grid-area: button;
-    }
 }
 
 /* about me */
@@ -440,18 +430,18 @@ header {
     max-width: 500px;
 }
 
-.portfolio {
-    display: grid;
-    justify-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
-    grid-gap: 2em;
-}
-
 .project-header {
     margin-top: 0.5em;
 }
 
-a {
+.portfolio {
+    display: grid;
+    justify-items: center;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+}
+
+.portfolio a {
     text-decoration: none;
     color: white;
 }
@@ -472,6 +462,9 @@ a {
 
 }
 
+.project a {
+    margin-left: 2em;
+}
 
 /* project page */
 
@@ -486,6 +479,13 @@ a {
 
 .project-img {
     margin: 2em auto;
+}
+
+@media (min-width: 750px) {
+    .project-link-btn {
+        justify-self: center;
+        margin: 1em;
+    }
 }
 
 /* footer */
