@@ -6,6 +6,7 @@ function ProjectDetails(props) {
       window.scrollTo(0, 0)
     }, [])
 
+    const toolsJsx = props.data.tools.map((tool, index) => <p key={index} className="tool-p">{tool}</p>)
     const descriptionJsx = props.data.description.map((line, index) => <p key={index} className="text-p">{line}</p>)
 
     return (
@@ -13,6 +14,9 @@ function ProjectDetails(props) {
             <Intro data={props.data} type="project" />
             <section className="project">
                 <div className="container text-container">
+                    <div className="tools-container">
+                        {toolsJsx}
+                    </div>
                     {descriptionJsx[0]}
                     <img src={props.data.extraImg.src} alt={props.data.extraImg.alt} className="project-img"/>
                     {descriptionJsx.slice(1)}

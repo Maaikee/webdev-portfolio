@@ -3,6 +3,10 @@ import React from 'react'
 function Footer() {
     return (
         <div className="footer-container footer">
+            <div className="footer-location">
+                <img src="./images/location-dot-solid.svg" alt="Location icon"/>
+                <p>Utrecht, NL</p>
+            </div>
             <a href="mailto:maaike.konijnendijk@hotmail.com"
                className="mail footer-link">maaike.konijnendijk@hotmail.com</a>
             <ul className="socials-list">

@@ -51,6 +51,9 @@ export const projectData = [
             src: "./images/Lifelog-map.PNG",
             alt: ""
         },
+        tools: [
+            "JavaScript", "Leaflet", "HTML", "CSS", "Python", "Django"
+        ],
         description: [
             `
                 For my master's thesis, I created and scientifically evaluated a web application, 
@@ -109,6 +112,9 @@ export const projectData = [
             src: "./images/Snake.PNG",
             alt: "My Snake web app"
         },
+        tools: [
+            "JavaScript", "HTML", "CSS"
+        ],
         description: [
             ` 
                 Since I was always interested in video games, one of the small 
