@@ -47,10 +47,7 @@ export const projectData = [
             src: "./images/Lifelog-map.PNG",
             alt: ""
         },
-        extraImg: {
-            src: "./images/Lifelog-map.PNG",
-            alt: ""
-        },
+        video: "https://www.youtube-nocookie.com/embed/i952OtBgx7Q",
         tools: [
             "JavaScript", "Leaflet", "HTML", "CSS", "Python", "Django"
         ],
