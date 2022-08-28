@@ -6,7 +6,7 @@ export const introProps = {
         titleSpan: "Hi, I am",
         subtitle: "Front-end dev",
         baseImg: {
-            src: "/",
+            src: "./images/profile.jpg",
             alt: ""
         }
     },
@@ -14,7 +14,7 @@ export const introProps = {
        title: "About me",
         subtitle: "Maaike Konijnendijk",
         baseImg: {
-            src: "/",
+            src: "./images/profile.jpg",
             alt: ""
         }
     },
@@ -22,7 +22,7 @@ export const introProps = {
         title: "Projects",
         subtitle: "Some of my work",
         baseImg: {
-            src: "/",
+            src: "./images/Snake.png",
             alt: ""
         }
     }
@@ -56,7 +56,8 @@ export const projectData = [
                 For my master's thesis, I created and scientifically evaluated a web application, 
                 the Lifelog Browser, which was built to make
                 lifelog data accessible. Lifelog data is a combination of different data types
-                that someone collects with sensors that they carry around with them. Specifically,
+                that someone collects with sensors that they carry around with them in order to
+                record their life's experiences. Specifically,
                 the database of lifelog data that I used for this application contained photos,
                 together with metadata like date and location. The database contained almost 
                 300,000 photos, which were displayed to the user on a map. They could filter the 
@@ -79,7 +80,7 @@ export const projectData = [
                 with that at the time. I pulled in a number of libraries for functionalities 
                 that were too complex to create by myself. To implement the map, I used Leaflet
                 and for the different map visualizations, I used the plug-ins Leaflet.heat and 
-                Markercluster, slightly modifying their styling and functionalities to suit my
+                Markercluster, modifying their styling and functionalities to suit my
                 needs. Finally, for two of the temporal filter types, I used the Jspreadsheet CE
                 library and added functionalities on top in order to be able to use it as an
                 input method.

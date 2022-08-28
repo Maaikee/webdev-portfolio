@@ -87,7 +87,7 @@ img {
 
 .btn:hover,
 .btn:focus {
-    scale: 1.1;
+    /*scale: 1.1;*/
     background: var(--clr-accent-highlight);
 }
 
@@ -288,15 +288,15 @@ header {
 /* Intro */
 
 .intro-container {
-    display: grid;
-    align-content: center;
+    /*display: grid;*/
+    /*align-content: center;*/
     text-align: center;
     margin-top: 2em;
     padding: 0;
 }
 
 .intro-img {
-    width: 80%;
+    width: 70%;
     margin: 1.5em auto;
 }
 
@@ -306,6 +306,7 @@ header {
 
 @media (min-width: 750px) {
     .intro-container {
+        display: grid;
         text-align: right;
         grid-template: repeat(2, 1fr) / 50% 50%;
         align-items: start;
@@ -335,10 +336,11 @@ header {
 /* Skills */
 
 .skills-grid {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
     justify-items: center;
-    grid-gap: 1em;
+    grid-gap: 1.5em;
+    margin: 1em 0;
 }
 
 .skills {
@@ -350,10 +352,6 @@ header {
     color: var(--clr-accent)
 }
 
-.skill {
-    margin: 1em 1.5em;
-    max-width: 500px;
-}
 
 /* about me */
 
@@ -394,7 +392,7 @@ header {
     }
 
     .about-overview-img {
-        width: 80%;
+        width: 75%;
         grid-column: -2 / -1;
         grid-row: 1 / -1;
         align-self: start;

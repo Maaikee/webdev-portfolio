@@ -10,7 +10,7 @@ function ProjectsPage(props) {
 
     return (
         <>
-            <Intro data={introProps.projects}/>
+            <Intro data={introProps.projects} type="project"/>
             <section className="projects-intro">
                 <div className="container text-container">
                     <p className="text-p">{projectIntro}</p>
