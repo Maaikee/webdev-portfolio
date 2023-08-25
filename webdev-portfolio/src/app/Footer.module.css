@@ -1,0 +1,41 @@
+.container {
+  background: var(--color-accent);
+  color: var(--color-dark);
+  padding: 1em 0;
+  text-align: center;
+  line-height: 1;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  margin-bottom: 1em;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.link {
+  color: var(--color-dark);
+  text-decoration: none;
+  width: 25px;
+  height: 25px;
+  transition: 0.35s;
+}
+
+.link:hover {
+  scale: 1.2;
+}
+
+.image {
+  width: 20px;
+  height: 20px;
+  box-shadow: none;
+}

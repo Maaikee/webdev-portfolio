@@ -1,0 +1,29 @@
+:root {
+  --font-primary: "Albert Sans", sans-serif;
+  --font-secondary: monospace;
+
+  --fontweight-light: 300;
+  --fontweight-reg: 400;
+  --fontweight-bold: 800;
+
+  --color-light: #fdfbf7;
+  --color-dark: #13001a;
+  --color-accent: #d8cee4;
+  --color-accent-highlight: #b09dc8;
+
+  --box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+body {
+  background: var(--clr-light);
+  color: var(--clr-dark);
+  margin: 0;
+  font-family: var(--font-primary);
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  box-shadow: var(--box-shadow);
+}
