@@ -2,10 +2,10 @@ import styles from "./Footer.module.css";
 
 export function Footer() {
   return (
-    <div className={styles.container}>
+    <footer className={styles.container}>
       <div className={styles.location}>
         <img
-          src="./images/location-dot-solid.svg"
+          src="/icons/location-dot-solid.svg"
           alt="Location icon"
           className={styles.image}
         />
@@ -15,7 +15,7 @@ export function Footer() {
         <li className={styles.link}>
           <a href="https://www.linkedin.com/in/mkonijnendijk/">
             <img
-              src="./images/linkedin-brands.svg"
+              src="/icons/linkedin-brands.svg"
               alt="LinkedIn Icon"
               className={styles.image}
             />
@@ -24,13 +24,13 @@ export function Footer() {
         <li className={styles.link}>
           <a href="https://github.com/Maaikee">
             <img
-              src="./images/square-github-brands.svg"
+              src="/icons/square-github-brands.svg"
               alt="GitHub Icon"
               className={styles.image}
             />
           </a>
         </li>
       </ul>
-    </div>
+    </footer>
   );
 }

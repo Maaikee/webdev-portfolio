@@ -1,4 +1,7 @@
 :root {
+  --width-wide: 1800px;
+  --width-regular: 1000px;
+
   --font-primary: "Albert Sans", sans-serif;
   --font-secondary: monospace;
 
@@ -25,5 +28,4 @@ body {
 img {
   display: block;
   max-width: 100%;
-  box-shadow: var(--box-shadow);
 }
