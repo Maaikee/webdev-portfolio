@@ -1,0 +1,38 @@
+.section {
+  text-align: center;
+  background: var(--color-dark);
+  color: var(--color-light);
+  padding: 2em 1em;
+}
+
+.container {
+  max-width: var(--width-regular);
+  margin: 0 auto;
+}
+
+.header {
+  color: var(--color-accent);
+}
+
+.subtitle {
+  margin: 1em auto;
+  max-width: 500px;
+}
+
+.gallery {
+  display: grid;
+  justify-items: center;
+  grid-gap: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+}
+
+/* TODO: Turn into separate component */
+.button {
+  background: var(--color-accent);
+  color: var(--color-dark);
+  text-decoration: none;
+  font-weight: var(--fontweight-bold);
+  letter-spacing: 0.08rem;
+  padding: 0.5em 1.5em;
+  transition: 0.35s;
+}
