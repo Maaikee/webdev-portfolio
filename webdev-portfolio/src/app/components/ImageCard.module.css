@@ -1,0 +1,23 @@
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.imageWrapper {
+  overflow: hidden;
+}
+
+.image {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.image:hover {
+  transform: scale(1.2);
+}
+
+.header {
+  margin-top: 0.5em;
+}

@@ -120,33 +120,12 @@ export const projectData = [
       type: "CodePen",
     },
   },
-  // {
-  //     key: 3,
-  //     url: "notes",
-  //     title: "Notes",
-  //     subtitle: "Simple app",
-  //     baseImg: {
-  //         src: "./images/",
-  //         alt: ""
-  //     },
-  //     extraImg: {
-  //         src: "./images/",
-  //         alt: ""
-  //     },
-  //     description: [
-  //         `hi`,
-  //         `I made this three`
-  //     ]
-  // }
 ];
-
-// user experience / usability
 
 export const skills = [
   {
-    key: 1,
     title: "JavaScript",
-    content: `
+    description: `
             After building a basis of coding knowledge in Python, 
             I started to learn JavaScript, to which I adapted quickly. 
             I have practiced my JavaScript skills in many different 
@@ -155,9 +134,8 @@ export const skills = [
         `,
   },
   {
-    key: 2,
     title: "HTML & CSS",
-    content: `
+    description: `
             I create well-structured HTML pages with sensible CSS styling. 
             I love to see a plain HTML page come to life through CSS. 
             I use classes to my advantage to create reusable and well-structured
@@ -166,9 +144,8 @@ export const skills = [
         `,
   },
   {
-    key: 3,
     title: "React",
-    content: `
+    description: `
             Only recently I have started to learn React, as I first wanted
             to ensure that my background in Javascript was solid. I have been 
             practicing the basics of React and I've been enjoying the speed and 
@@ -178,9 +155,8 @@ export const skills = [
         `,
   },
   {
-    key: 4,
     title: "Python",
-    content: `
+    description: `
             Even though not directly applicable to front-end development, I learned 
             a lot of Python during my master's degree. I use it for a variety of different
             purposes, from machine learning to multimedia retrieval and scripting. I also have some
