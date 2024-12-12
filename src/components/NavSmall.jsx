@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 export function NavSmall() {
@@ -25,10 +25,10 @@ export function NavSmall() {
             <Link to="/">Home</Link>
           </li>
           <li className="nav-item" onClick={handleMenuToggle}>
-            <Link to="about">About me</Link>
+            <Link to="/about">About me</Link>
           </li>
           <li className="nav-item" onClick={handleMenuToggle}>
-            <Link to="projects">Projects</Link>
+            <Link to="/projects">Projects</Link>
           </li>
         </ul>
       </nav>

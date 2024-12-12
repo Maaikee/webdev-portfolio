@@ -3,7 +3,7 @@ import Skills from "./components/Skills";
 import Intro from "./components/Intro";
 import { introProps, about } from "./siteData";
 
-function ProjectsPage(props) {
+function ProjectsPage() {
   React.useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

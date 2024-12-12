@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 // import components to render
 import Home from "./Home";
+import { PageNotFound } from "./PageNotFound";
 import { NavSmall } from "./components/NavSmall";
 import NavBig from "./components/NavBig";
 import Footer from "./components/Footer";
@@ -28,7 +29,7 @@ function App() {
   const routesJsx = projectData.map((project, index) => {
     return (
       <Route
-        path={project.url}
+        path={`projects/${project.url}`}
         element={<ProjectDetails data={project} />}
         key={index}
       />
@@ -37,7 +38,7 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename="/webdev-portfolio/">
         <header className="App-header">
           <Link to="/">
             <div className="logo">
@@ -46,12 +47,15 @@ function App() {
           </Link>
           {width < 750 ? <NavSmall /> : <NavBig />}
         </header>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="about" element={<AboutPage />} />
-          <Route path="projects" element={<ProjectsPage />} />
-          {routesJsx}
-        </Routes>
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="about" element={<AboutPage />} />
+            <Route path="projects" element={<ProjectsPage />} />
+            {routesJsx}
+            <Route path="/*" element={<PageNotFound />} />
+          </Routes>
+        </main>
         <Footer>
           <Footer />
         </Footer>
